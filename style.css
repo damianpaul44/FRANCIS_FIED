@@ -593,18 +593,15 @@ right:-120px;
 }
 
 }
-
+.tea{
+  text-align: center;
+}
 
 /* MOBILE VIEW */
 @media (max-width: 480px){
 
 .about-content h1{
 font-size:45px;
-}
-
-.about-content p{
-font-size:16px;
-line-height:1.8;
 }
 
 .circle{
