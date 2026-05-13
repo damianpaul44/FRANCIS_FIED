@@ -562,6 +562,7 @@ bottom:-170px;
 right:-170px;
 }
 
+
 /* RESPONSIVE */
 
 @media(max-width:768px){
@@ -592,6 +593,40 @@ right:-120px;
 }
 
 }
+
+
+/* MOBILE VIEW */
+@media (max-width: 480px){
+
+.about-content h1{
+font-size:45px;
+}
+
+.about-content p{
+font-size:16px;
+line-height:1.8;
+}
+
+.circle{
+width:250px;
+height:250px;
+border:35px solid rgba(255,255,255,0.1);
+}
+
+.left-circle{
+top:-120px;
+left:-120px;
+}
+
+.right-circle{
+bottom:-120px;
+right:-120px;
+}
+
+}
+
+
+
 
 
 /* FOOTER */
