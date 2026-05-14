@@ -888,7 +888,7 @@ transform:translateX(-50%);
 }
 
 .faq-question:hover {
-  background-color: hsl(42, 27%, 90%);
+  background-color: hsl(40, 3%, 62%);
   border: 3px;
 }
 
@@ -993,7 +993,16 @@ transform:translateX(-50%);
   }
 }
 
-
+.aboutus {
+  width: 100%;
+  border: 3px solid whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
 
 
