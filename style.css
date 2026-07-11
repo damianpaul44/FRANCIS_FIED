@@ -114,6 +114,7 @@ height:100vh;
 background:url('francis1.PNG');
 background-size:cover;
 background-position:center;
+backdrop-filter:blur(2px);
 position:relative;
 display:flex;
 justify-content:center;
@@ -320,7 +321,7 @@ color:#ccc;
 /* APPOINTMENT */
 .appointment{
 padding:140px 8%;
-background:url('francis01.PNG');
+background:url('WhatsApp\ Image\ 2026-06-26\ at\ 10.48.51.jpeg');
 background-size:cover;
 background-position:center;
 position:relative;
@@ -1068,3 +1069,435 @@ transform:translateX(-50%);
 .next{
     right:20px;
 }
+
+
+.chat-toggle{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+border:none;
+border-radius:50%;
+background:#0d6efd;
+color:white;
+font-size:28px;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+z-index:9999;
+}
+
+.chat-window{
+
+position:fixed;
+bottom:100px;
+right:25px;
+
+width:360px;
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+display:none;
+
+font-family:Arial,sans-serif;
+
+z-index:9999;
+
+}
+
+.chat-header{
+
+background:#0d6efd;
+
+padding:18px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:white;
+
+}
+
+.chat-header button{
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+}
+
+.chat-body{
+
+padding:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.bot{
+
+background:#0d6efd;
+
+padding:12px;
+
+border-radius:10px;
+color: #d9d9d9;
+
+}
+
+.chat-body input,
+
+.chat-body textarea{
+
+padding:12px;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+font-size:15px;
+
+}
+
+textarea{
+
+height:100px;
+
+resize:none;
+
+}
+
+#sendBtn{
+
+padding:14px;
+
+border:none;
+
+border-radius:10px;
+
+background:#0d6efd;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+#success{
+
+color:green;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+
+
+
+.about-page{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    padding:80px;
+
+    overflow:hidden;
+
+}
+
+/* Background Image */
+
+.background{
+
+    position:absolute;
+
+    inset:0;
+
+    /* PUT YOUR IMAGE HERE */
+    background:url("WhatsApp Image 2026-06-26 at 10.52.14 (1).jpeg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    z-index:-3;
+
+}
+
+/* Dark Overlay */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:-2;
+
+}
+
+/* Glass Card */
+
+.glass-container{
+
+    width:650px;
+
+    max-width:100%;
+
+    padding:60px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(1px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:25px;
+
+    color:#fff;
+
+    box-shadow:0 15px 50px rgba(0,0,0,.5);
+
+}
+
+/* Heading */
+
+.glass-container h4{
+
+    color:#d4af37;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+}
+
+.glass-container h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:65px;
+
+    margin-bottom:20px;
+
+}
+
+.line{
+
+    width:90px;
+
+    height:4px;
+
+    background:#d4af37;
+
+    margin-bottom:40px;
+
+}
+
+/* Paragraph */
+
+.glass-container p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+    color:#f3f3f3;
+
+}
+
+/* Services */
+
+.services{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:40px 0;
+
+    gap:40px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* Quote */
+
+blockquote{
+
+    margin-top:50px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:28px;
+
+    color:#d4af37;
+
+    font-style:italic;
+
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media(max-width:991px){
+
+.about-page{
+
+padding:50px;
+
+justify-content:center;
+
+}
+
+.glass-container{
+
+width:100%;
+
+padding:45px;
+
+}
+
+.glass-container h1{
+
+font-size:48px;
+
+}
+
+}
+
+/* ========================= */
+/* PHONE */
+/* ========================= */
+
+@media(max-width:768px){
+
+.about-page{
+
+padding:25px;
+
+}
+
+.glass-container{
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+.glass-container h1{
+
+font-size:38px;
+
+}
+
+.glass-container p{
+
+font-size:16px;
+
+}
+
+.services{
+
+flex-direction:column;
+
+gap:20px;
+
+font-size:16px;
+
+}
+
+blockquote{
+
+font-size:22px;
+
+text-align:center;
+
+}
+
+}
+
+/* Small Phones */
+
+@media(max-width:480px){
+
+.glass-container{
+
+padding:25px;
+
+}
+
+.glass-container h1{
+
+font-size:30px;
+
+}
+
+.glass-container h4{
+
+font-size:12px;
+
+}
+
+.glass-container p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+}
+
+
+
